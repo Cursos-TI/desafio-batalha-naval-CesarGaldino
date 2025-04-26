@@ -11,9 +11,17 @@ int main() {
             tabuleiro[i][j] = 0;
         }
     }
+ // posicionar os navios no tabuleiro
+ tabuleiro[0][0] = 3; // Navio 1
+ tabuleiro[0][1] = 3; // Navio 1
+ tabuleiro[0][2] = 3; // Navio 1
+ tabuleiro[6][8] = 3; // Navio 2
+ tabuleiro[7][8] = 3; // Navio 2
+ tabuleiro[8][8] = 3; // Navio 2
 
-    // Exibe o tabuleiro
-    printf("   ");
+// Exibe o tabuleiro
+    printf("## Tabuleiro Batalha Naval ##\n   ");
+    printf("\n");
     for (int i = 0; i < 10; i++) {
         printf("%2d ", i); // Exibe os números das colunas
     }
